@@ -1,0 +1,77 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    h1 {
+      margin: 20px;
+      text-align: center;
+      font-size: 28px;
+    }
+    .out {
+      margin: 0px 15px;
+    }
+
+    .box {
+      margin: 15px;
+      border: 1px solid black;
+      background-color: #AAAAAA;
+      padding: 15px;
+      position: relative;
+    }
+    div > div > div > div{
+      float: right;
+      border: 1px solid black;
+      padding: 1px 35px;
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    #titel1 {
+      background-color: #FFA0C0;
+    }
+    #titel2 {
+      background-color: #FF3030;
+      color: white;
+    }
+    #titel3 {
+      background-color: #FFFF80;
+    }
+
+    .inhalt {
+      clear: right;
+      padding-top: 30px;
+    }
+
+    /********** Large devices only **********/
+    @media (min-width: 992px) {
+      .col-lg-4 {
+        float: left;
+        width: 33.33%;
+      }
+    }
+
+    /********** Medium devices only **********/
+    @media (min-width: 768px) and (max-width: 991px) {
+       .col-md-6 {
+        float: left;
+        width: 50%;
+     }
+       .col-md-12 {
+        clear: left;
+        width: 100%;
+      }
+    }
+
+    /********** small devices only **********/
+    @media (max-width: 767px) {
+      .col-sm-12 {
+        float: left;
+        width: 100%;
+      }
+    }
